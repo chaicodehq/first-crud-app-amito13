@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand",
-    "test:win": "set NODE_OPTIONS=--experimental-vm-modules&& jest --runInBand"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
   },
   "keywords": [
     "express",
